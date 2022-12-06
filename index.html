@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN =========================== -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- ===================================== -->
+
+    <title>GameSharks</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <script defer src="/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header stick-main--nav">
+      <nav class="nav">
+        <a href="#" class="logo"><h2>GameSharks</h2></a>
+        <nav class="main-nav-left">
+          <a href="#hero" class="main-nav-link">Home</a>
+          <a href="#games" class="main-nav-link">Games</a>
+          <a href="#" class="main-nav-link">Challenge</a>
+        </nav>
+        <div class="search-bar">
+          <form action="" class="search-container">
+            <input
+              type="text"
+              placeholder="Search games"
+              name="search"
+              class="search"
+            />
+            <button type="submit" class="search-btn">
+              <span class="material-symbols-outlined search-icon">
+                Search
+              </span>
+            </button>
+          </form>
+        </div>
+        <nav class="main-nav-right">
+          <a href="/tournament.html" class="main-nav-link">Tournaments</a>
+          <a href="#" class="main-nav-link">Community</a>
+          <a href="#" class="main-nav-link nav-cta btn--show-modal">Sign Up</a>
+        </nav>
+      </nav>
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal-heading">Sign up Now !</h2>
+        <form action="" class="modal--form">
+          <label>Username</label>
+          <input type="text" />
+          <label>Email Address</label>
+          <input type="email" />
+          <label>Password</label>
+          <input type="password" />
+          <button>REGISTER</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-text-box">
+          <h1 class="hero-head">How Long Can You Last?</h1>
+          <p class="hero-discription">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            incidunt nisi ullam odit omnis excepturi non sit sed at! Enim.
+          </p>
+          <div class="hero-nav">
+            <a href="#" class="btn--full">Browse More &darr; </a>
+            <a href="#" class="btn--outline">Join Tournaments</a>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/action/asscreed.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/action/gta5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/horror/dyinglight-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/multiplayer/apex.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/adventure/watchdogs-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/sports/fifa22.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/action/csgo-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/multiplayer/valo-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/multiplayer/fortnight.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main" id="games">
+      <aside class="sticky">
+        <ul class="sidebar-nav">
+          <li>
+            <a href="#section-trending" class="sidebar-nav-link active"
+              >Trending Games</a
+            >
+          </li>
+          <li>
+            <a href="#section-newgame" class="sidebar-nav-link">New Games</a>
+          </li>
+          <li>
+            <a href="#section-action" class="sidebar-nav-link">Action Games</a>
+          </li>
+          <li>
+            <a href="#section-multiplayer" class="sidebar-nav-link"
+              >Multiplayer Games</a
+            >
+          </li>
+          <li>
+            <a href="#section-horror" class="sidebar-nav-link">Horror Games</a>
+          </li>
+          <li>
+            <a href="#section-adventure" class="sidebar-nav-link"
+              >Adventure Games</a
+            >
+          </li>
+          <li>
+            <a href="#section-sports" class="sidebar-nav-link">Sport Games</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main-content">
+        <section class="grid-section" id="section-trending">
+          <h2 class="section-heading">
+            <span class="material-symbols-outlined head-icon">
+              local_fire_department
+            </span>
+            Trending Games
+          </h2>
+          <div class="all-cards">
+            <div class="card trending--card-1">
+              <!-- <img src="/img/action/gta5.jpg" alt="" class="back-img" /> -->
+              <div class="card-overlay">
+                <p class="game-title">GTA V</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card trending--card-2">
+              <div class="card-overlay">
+                <p class="game-title">Subway Surfers</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card trending--card-3">
+              <div class="card-overlay">
+                <p class="game-title">Call Of Duty - mordern warfare</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card trending--card-4">
+              <div class="card-overlay">
+                <p class="game-title">CyberPunk</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card trending--card-5">
+              <div class="card-overlay">
+                <p class="game-title">Spider Man - miles morales</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card trending--card-6">
+              <div class="card-overlay">
+                <p class="game-title">Fall Guys</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid-section" id="section-newgame">
+          <h2 class="section-heading">
+            <span class="material-symbols-outlined head-icon">
+              stadia_controller
+            </span>
+            New Games
+          </h2>
+          <div class="all-cards">
+            <div class="card newGame--card-1">
+              <div class="card-overlay">
+                <p class="game-title">Among Us</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card newGame--card-2">
+              <div class="card-overlay">
+                <p class="game-title">Uncharted</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card newGame--card-3">
+              <div class="card-overlay">
+                <p class="game-title">Valorant</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.5</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card newGame--card-4">
+              <div class="card-overlay">
+                <p class="game-title">Need For Speed - No Limits</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.2</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card newGame--card-5">
+              <div class="card-overlay">
+                <p class="game-title">Counter Strike - Global Offensive</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card newGame--card-6">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid-section" id="section-action">
+          <h2 class="section-heading">
+            <span class="material-symbols-outlined head-icon">
+              detection_and_zone
+            </span>
+            Action Games
+          </h2>
+          <div class="all-cards">
+            <div class="card action--card-1">
+              <div class="card-overlay">
+                <p class="game-title">Among Us</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card action--card-2">
+              <div class="card-overlay">
+                <p class="game-title">Uncharted</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card action--card-3">
+              <div class="card-overlay">
+                <p class="game-title">Valorant</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.5</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card action--card-4">
+              <div class="card-overlay">
+                <p class="game-title">Need For Speed - No Limits</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.2</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card action--card-5">
+              <div class="card-overlay">
+                <p class="game-title">Counter Strike - Global Offensive</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card action--card-6">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card action--card-7">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card action--card-8">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card action--card-9">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid-section" id="section-multiplayer">
+          <h2 class="section-heading">
+            <span class="material-symbols-outlined head-icon"> group_add </span>
+            Multiplayer Games
+          </h2>
+          <div class="all-cards">
+            <div class="card multiplayer--card-1">
+              <div class="card-overlay">
+                <p class="game-title">Among Us</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card multiplayer--card-2">
+              <div class="card-overlay">
+                <p class="game-title">Uncharted</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card multiplayer--card-3">
+              <div class="card-overlay">
+                <p class="game-title">Valorant</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.5</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card multiplayer--card-4">
+              <div class="card-overlay">
+                <p class="game-title">Need For Speed - No Limits</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.2</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card multiplayer--card-5">
+              <div class="card-overlay">
+                <p class="game-title">Counter Strike - Global Offensive</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card multiplayer--card-6">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card multiplayer--card-7">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card multiplayer--card-8">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card multiplayer--card-9">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid-section" id="section-horror">
+          <h2 class="section-heading">
+            <i class="fa-brands fa-snapchat head-icon"></i>
+            Horror Games
+          </h2>
+          <div class="all-cards">
+            <div class="card horror--card-1">
+              <div class="card-overlay">
+                <p class="game-title">Among Us</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card horror--card-2">
+              <div class="card-overlay">
+                <p class="game-title">Uncharted</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card horror--card-3">
+              <div class="card-overlay">
+                <p class="game-title">Valorant</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.5</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card horror--card-4">
+              <div class="card-overlay">
+                <p class="game-title">Need For Speed - No Limits</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.2</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card horror--card-5">
+              <div class="card-overlay">
+                <p class="game-title">Counter Strike - Global Offensive</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card horror--card-6">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card horror--card-7">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card horror--card-8">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card horror--card-9">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid-section" id="section-adventure">
+          <h2 class="section-heading">
+            <span class="material-symbols-outlined head-icon"> hiking </span>
+            Adventure Games
+          </h2>
+          <div class="all-cards">
+            <div class="card adventure--card-1">
+              <div class="card-overlay">
+                <p class="game-title">Among Us</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card adventure--card-2">
+              <div class="card-overlay">
+                <p class="game-title">Uncharted</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card adventure--card-3">
+              <div class="card-overlay">
+                <p class="game-title">Valorant</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.5</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card adventure--card-4">
+              <div class="card-overlay">
+                <p class="game-title">Need For Speed - No Limits</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.2</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card adventure--card-5">
+              <div class="card-overlay">
+                <p class="game-title">Counter Strike - Global Offensive</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card adventure--card-6">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card adventure--card-7">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card adventure--card-8">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card adventure--card-9">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid-section" id="section-sports">
+          <h2 class="section-heading">
+            <span class="material-symbols-outlined head-icon">
+              sports_volleyball
+            </span>
+            Sport Games
+          </h2>
+          <div class="all-cards">
+            <div class="card sports--card-1">
+              <div class="card-overlay">
+                <p class="game-title">Among Us</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card sports--card-2">
+              <div class="card-overlay">
+                <p class="game-title">Uncharted</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.7</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card sports--card-3">
+              <div class="card-overlay">
+                <p class="game-title">Valorant</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.5</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card sports--card-4">
+              <div class="card-overlay">
+                <p class="game-title">Need For Speed - No Limits</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.2</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card sports--card-5">
+              <div class="card-overlay">
+                <p class="game-title">Counter Strike - Global Offensive</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>4.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card sports--card-6">
+              <div class="card-overlay">
+                <p class="game-title">Assassins Creed Valhalla</p>
+                <p class="game-category">action</p>
+                <div class="card-footer">
+                  <div class="rating">
+                    <img
+                      src="/img/icon-star.png"
+                      alt="star"
+                      class="star-icon"
+                    />
+                    <p>3.9</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined dwnld-icon">
+                      download
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="logo"><h3>GameSharks</h3></a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <i class="fa-brands fa-twitter head-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <i class="fa-brands fa-facebook social-icon head-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <i class="fa-brands fa-instagram social-icon head-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <i class="fa-brands fa-github head-icon"></i>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2027 by GameSharks, Inc. all rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact Us</p>
+          <address class="contacts">
+            <p class="address">196 sec-6, jaipur, Raj ,IND 302017</p>
+            <p>
+              <a href="tel:8112279510" class="footer-link">415-201-6370</a>
+              <br />
+              <a href="mailto:kalwani.naman1406@gmail.com" class="footer-link"
+                >hello@GameSharks.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About GameSharks</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Events</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Legal stuff</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Support policy</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            <li><a class="footer-link" href="#">Cookies policy</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- ============================================ 
+      script cdn
+    ============================================= -->
+    <script
+      src="https://kit.fontawesome.com/f4c75e94a8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- =========================================== -->
+  </body>
+</html>

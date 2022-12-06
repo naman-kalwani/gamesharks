@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tournaments</title>
+    <!-- font and icon ******* -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ********************* -->
+
+    <link rel="stylesheet" href="/css/tournament.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <script src="/js/tournament.js"></script>
+  </head>
+  <body>
+    <header class="header stick-main--nav">
+      <nav class="nav">
+        <a href="#" class="logo"><h2>GameSharks</h2></a>
+        <nav class="main-nav-left">
+          <a href="#" class="main-nav-link">Home</a>
+          <a href="#" class="main-nav-link">Games</a>
+          <a href="#" class="main-nav-link">Challenge</a>
+        </nav>
+        <div class="search-bar">
+          <form action="" class="search-container">
+            <input
+              type="text"
+              placeholder="Search games"
+              name="search"
+              class="search"
+            />
+            <button type="submit" class="search-btn">
+              <span class="material-symbols-outlined search-icon">
+                Search
+              </span>
+            </button>
+          </form>
+        </div>
+        <nav class="main-nav-right">
+          <a href="/tournament.html" class="main-nav-link">Tournaments</a>
+          <a href="#" class="main-nav-link">Community</a>
+          <a href="" class="main-nav-link nav-cta btn--show-modal">Sign Up</a>
+        </nav>
+      </nav>
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal-heading">Sign up Now !</h2>
+        <form action="" class="modal--form">
+          <label>Username</label>
+          <input type="text" />
+          <label>Email Address</label>
+          <input type="email" />
+          <label>Password</label>
+          <input type="password" />
+          <button>REGISTER</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+    </header>
+
+    <section class="home">
+      <div class="container">
+        <h1 class="main-heading">
+          create your team and win the tournament now!
+        </h1>
+        <p class="main-content">
+          GameSharks, the place where you can join with your team, play
+          different popular games aand win the tournaments together with them.
+          what else? call your team and join now!
+        </p>
+        <div class="home-btns">
+          <a href="#" class="btn--full tournament-btn"
+            >Discover Tournaments &darr;</a
+          >
+          <a href="#" class="btn--outline tournament-btn">Create An Account</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tournaments">
+      <nav class="tournaments-nav">
+        <ul class="cards-link-list">
+          <li class="cards-link"><a href="#"> upcomming</a></li>
+          <li class="cards-link"><a href="#"> started</a></li>
+          <li class="cards-link"><a href="#"> past</a></li>
+        </ul>
+        <div class="card-filters">
+          <div class="filter-region dropdown">
+            <div class="select">
+              <span class="selected">All Regions</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li>Russia</li>
+              <li>Brazil</li>
+              <li>Singapore</li>
+              <li>India</li>
+              <li>France</li>
+              <li>Japan</li>
+              <li class="active-menu">All regions</li>
+            </ul>
+          </div>
+          <div class="filter-format dropdown">
+            <div class="select">
+              <span class="selected">All Formats</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li>Solo</li>
+              <li>Duo</li>
+              <li>Squad</li>
+              <li class="active-menu">all Formats</li>
+            </ul>
+          </div>
+          <div class="filter-btns">
+            <a href="#" class="filter-btn-free">FREE</a>
+            <a href="#" class="filter-btn-paid">PAID</a>
+          </div>
+        </div>
+      </nav>
+      <div class="tournaments-main">
+        <ul class="tournaments-main-cards">
+          <li class="tournament-card">
+            <div class="card-banner">
+              <!-- <img src="/img/subway surfers.png" class="img-banner" alt="" /> -->
+            </div>
+            <div class="card-details">
+              <h3 class="details-head">ss tournament</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="grid--footer">
+        <div class="logo-col">
+          <a href="#" class="logo"><h3>GameSharks</h3></a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <i class="fa-brands fa-twitter head-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <i class="fa-brands fa-facebook social-icon head-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <i class="fa-brands fa-instagram social-icon head-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <i class="fa-brands fa-github head-icon"></i>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2027 by GameSharks, Inc. all rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact Us</p>
+          <address class="contacts">
+            <p class="address">196 sec-6, jaipur, Raj ,IND 302017</p>
+            <p>
+              <a href="tel:8112279510" class="footer-link">415-201-6370</a>
+              <br />
+              <a href="mailto:kalwani.naman1406@gmail.com" class="footer-link"
+                >hello@GameSharks.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About GameSharks</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Events</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Legal stuff</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Support policy</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            <li><a class="footer-link" href="#">Cookies policy</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/f4c75e94a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
