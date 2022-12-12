@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tournaments</title>
-    <!-- font and icon ******* -->
+    <!-- CDN =========================== -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -14,18 +14,22 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- ********************* -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- ===================================== -->
 
     <link rel="stylesheet" href="/css/tournament.css" />
     <link rel="stylesheet" href="/css/general.css" />
-    <script src="/js/tournament.js"></script>
+    <script defer src="/js/tournament.js"></script>
   </head>
   <body>
     <header class="header stick-main--nav">
       <nav class="nav">
         <a href="#" class="logo"><h2>GameSharks</h2></a>
         <nav class="main-nav-left">
-          <a href="#" class="main-nav-link">Home</a>
+          <a href="index.html" class="main-nav-link">Home</a>
           <a href="#" class="main-nav-link">Games</a>
           <a href="#" class="main-nav-link">Challenge</a>
         </nav>
@@ -46,7 +50,9 @@
         </div>
         <nav class="main-nav-right">
           <a href="/tournament.html" class="main-nav-link">Tournaments</a>
-          <a href="#" class="main-nav-link">Community</a>
+          <a href="https://discord.gg/47tBwADc " class="main-nav-link"
+            >Community</a
+          >
           <a href="" class="main-nav-link nav-cta btn--show-modal">Sign Up</a>
         </nav>
       </nav>
@@ -72,25 +78,33 @@
           create your team and win the tournament now!
         </h1>
         <p class="main-content">
-          GameSharks, the place where you can join with your team, play
-          different popular games aand win the tournaments together with them.
-          what else? call your team and join now!
+          GameSharks, the place where you can join with your team, compete in
+          different popular games and win unique prizes together with them ,
+          create your own tournamnents, and become the best .
         </p>
         <div class="home-btns">
           <a href="#" class="btn--full tournament-btn"
-            >Discover Tournaments &darr;</a
-          >
+            >Discover Tournaments
+            <i class="fa-solid fa-angle-down icon-arrow"></i>
+          </a>
           <a href="#" class="btn--outline tournament-btn">Create An Account</a>
         </div>
       </div>
     </section>
 
     <section class="tournaments">
+      <div class="tournament-head">
+        <h1 class="primary--head">Play most popular games.</h1>
+        <p class="sub-text">
+          We have over <span class="sub-span">+100</span> games in which we run
+          tournaments
+        </p>
+      </div>
       <nav class="tournaments-nav">
         <ul class="cards-link-list">
-          <li class="cards-link"><a href="#"> upcomming</a></li>
-          <li class="cards-link"><a href="#"> started</a></li>
-          <li class="cards-link"><a href="#"> past</a></li>
+          <li><span class="cards-link"> Upcomming</span></li>
+          <li><span class="cards-link"> In Progress</span></li>
+          <li><span class="cards-link"> completed </span></li>
         </ul>
         <div class="card-filters">
           <div class="filter-region dropdown">
@@ -121,22 +135,1943 @@
             </ul>
           </div>
           <div class="filter-btns">
-            <a href="#" class="filter-btn-free">FREE</a>
-            <a href="#" class="filter-btn-paid">PAID</a>
+            <a href="" class="toggle-btn toggle-active">FREE</a>
+            <a href="" class="toggle-btn">PAID</a>
           </div>
         </div>
       </nav>
-      <div class="tournaments-main">
+      <div class="tournaments-upcomming">
+        <h2 class="section-heading">
+          <span class="material-symbols-outlined head-icon">
+            local_fire_department
+          </span>
+          Upcomming tournaments
+        </h2>
+
         <ul class="tournaments-main-cards">
           <li class="tournament-card">
             <div class="card-banner">
-              <!-- <img src="/img/subway surfers.png" class="img-banner" alt="" /> -->
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img src="/img/action/valo-1.jpg" class="img-banner" alt="" />
             </div>
             <div class="card-details">
-              <h3 class="details-head">ss tournament</h3>
+              <h3 class="card-head">DEV Valorant tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img
+                src="/img/tournaments/apex-1.jpg"
+                class="img-banner"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">apex legends tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/japan.png" alt="" />
+                  <p class="region-name">JAPAN</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img src="/img/tournaments/lol-1.jpg" class="img-banner" alt="" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">league of legends tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img
+                src="/img/tournaments/csgo-1.jpg"
+                class="img-banner"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">CS: gobal Offensive</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 2 DAYS</div>
+              <img
+                src="/img/tournaments/fortnite.jpg"
+                class="img-banner"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">fortnite tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img
+                src="/img/tournaments/overwatch-1.jpg"
+                class="img-banner"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">overWatch tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img src="/img/tournaments/lol-2.jpg" class="img-banner" alt="" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">league of legends tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img
+                src="/img/tournaments/madden-1.jpg"
+                class="img-banner"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">madden-22 tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img
+                src="/img/tournaments/overwatch-2.jpg"
+                class="img-banner"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">overWatch tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img src="/img/tournaments/pubg.jpg" class="img-banner" alt="" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">pubg tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img
+                src="/img/tournaments/rocket-league.jpg"
+                class="img-banner"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">rocket league tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
+            </div>
+          </li>
+          <li class="tournament-card">
+            <div class="card-banner">
+              <div class="tour-dayleft">IN 4 DAYS</div>
+              <img
+                src="/img/tournaments/valo-2.jpg"
+                class="img-banner"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <h3 class="card-head">Valorant tournament</h3>
+              <div class="tour-schedule">
+                <div class="tour-date">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Mon, Dec 12th</p>
+                </div>
+                <div class="tour-time">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>9:00 PM</p>
+                </div>
+                <div class="tour-region">
+                  <img src="img/flag/india.png" alt="" class="region-flag" />
+                  <p class="region-name">INDIA</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="tour-info">
+                <div class="tour-info-fee">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <div class="info-content">
+                    <p class="info-head">ENTRY</p>
+                    <p class="info-text">Free Entry</p>
+                  </div>
+                </div>
+                <div class="tour-info-size">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div class="info-content">
+                    <p class="info-head">TEAM SIZE</p>
+                    <p class="info-text">Squad</p>
+                  </div>
+                </div>
+                <div class="tour-info-prize">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div class="info-content">
+                    <p class="info-head">PRIZE</p>
+                    <p class="info-text">5K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tour-join">
+              <div class="join-users">
+                <img
+                  src="img/join-user/customer-1.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-2.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-3.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+                <img
+                  src="img/join-user/customer-4.jpg"
+                  alt="user img"
+                  class="user-img"
+                />
+              </div>
+              <div class="go-join">
+                <p class="user-joined">5/10</p>
+                <button class="btn--join btn--full">JOIN GAME</button>
+              </div>
             </div>
           </li>
         </ul>
+        <a href="#" class="show-more btn--outline">
+          Show more <i class="fa-solid fa-angle-down icon-arrow"></i>
+        </a>
+      </div>
+      <div class="tournaments-inprogress">
+        <h2 class="section-heading">
+          <ion-icon name="hourglass-outline" class="head-icon"></ion-icon>
+          In Progress Tournaments
+        </h2>
+
+        <div class="swiper mySwiper">
+          <ul class="swiper-wrapper">
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img src="/img/action/valo-1.jpg" class="img-banner" alt="" />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">DEV Valorant tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/apex-1.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">apex legends tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/japan.png" alt="" class="region-flag" />
+                    <p class="region-name">JAPAN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/lol-1.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">league of legends tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/csgo-1.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">CS: gobal Offensive</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">IN 2 DAYS</div>
+                <img
+                  src="/img/tournaments/fortnite.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">fortnite tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/overwatch-1.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">overWatch tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/lol-2.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">league of legends tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/madden-1.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">madden-22 tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/overwatch-2.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">overWatch tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/pubg.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">pubg tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/rocket-league.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">rocket league tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+            <li class="tournament-card swiper-slide">
+              <div class="card-banner">
+                <div class="tour-dayleft">LIVE</div>
+                <img
+                  src="/img/tournaments/valo-2.jpg"
+                  class="img-banner"
+                  alt=""
+                />
+              </div>
+              <div class="card-details">
+                <h3 class="card-head">Valorant tournament</h3>
+                <div class="tour-schedule">
+                  <div class="tour-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Mon, Dec 12th</p>
+                  </div>
+                  <div class="tour-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>9:00 PM</p>
+                  </div>
+                  <div class="tour-region">
+                    <img src="img/flag/india.png" alt="" class="region-flag" />
+                    <p class="region-name">INDIA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="tour-info">
+                  <div class="tour-info-fee">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <div class="info-content">
+                      <p class="info-head">ENTRY</p>
+                      <p class="info-text">Free Entry</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-size">
+                    <i class="fa-solid fa-people-group"></i>
+                    <div class="info-content">
+                      <p class="info-head">TEAM SIZE</p>
+                      <p class="info-text">Squad</p>
+                    </div>
+                  </div>
+                  <div class="tour-info-prize">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="info-content">
+                      <p class="info-head">PRIZE</p>
+                      <p class="info-text">5K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tour-join">
+                <div class="join-users">
+                  <img
+                    src="img/join-user/customer-1.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-2.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-3.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                  <img
+                    src="img/join-user/customer-4.jpg"
+                    alt="user img"
+                    class="user-img"
+                  />
+                </div>
+                <div class="go-join">
+                  <p class="user-joined">5/10</p>
+                  <button class="btn--join btn--full">JOIN GAME</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
 
@@ -213,9 +2148,25 @@
         </nav>
       </div>
     </footer>
+    <!-- ============================================ 
+      script cdn
+    ============================================= -->
     <script
       src="https://kit.fontawesome.com/f4c75e94a8.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- =========================================== -->
   </body>
 </html>

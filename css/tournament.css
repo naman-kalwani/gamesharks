@@ -6,7 +6,7 @@
   margin-top: 8.0rem;
   margin-bottom: 9.6rem;
   padding: 4.8rem 0 8.0rem 0;
-  border: 2px solid #CAD2C5;
+  border-bottom: 2px solid #354F52;
 }
 
 .container {
@@ -59,20 +59,42 @@
 /***************************************/
 
 .tournaments {
-  /* padding-top: 8.0rem; */
   margin-bottom: 9.6rem;
-  /* padding: 4.8rem 0 8.0rem 0; */
-  border: 2px solid #CAD2C5;
+  /* padding-top: 8.0rem; */
   color: #fff;
-  height: 100vh;
+  /* border: 2px solid #CAD2C5; */
+}
+
+.tournament-head {
+  padding: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.primary--head {
+  color: white;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.sub-text {
+  text-align: center;
+  color: #CAD2C5;
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.sub-span {
+  color: #e67e22;
+  font-size: 600;
 }
 
 .tournaments-nav {
   position: relative;
+  /* border: 2px solid #CAD2C5; */
+  align-items: center;
   padding: 4.2rem 6.4rem;
   display: flex;
-  gap: 20%;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   font-size: 1.4rem;
 }
 
@@ -80,7 +102,23 @@
   flex-basis: 30%;
   list-style: none;
   display: flex;
-  gap: 2.4rem;
+  gap: 6.4rem;
+}
+
+.cards-link {
+  text-decoration: none;
+  padding: 1rem 0;
+  border-bottom: 2px solid #e67e22;
+  color: #CAD2C5;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.cards-link:hover {
+  color: #fff;
+  padding-bottom: 4px;
+  cursor: pointer;
 }
 
 .card-filters {
@@ -94,16 +132,16 @@
 .filter-format,
 .filter-btn {
   width: 30%;
+  position: relative;
 }
 
 .select {
+  box-shadow: 0 2px 16px 0 rgb(0 0 0 / 15%);
   background: #52796F;
-  margin-bottom: 1.5rem;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid white;
   border-radius: 5px;
   padding: 1rem;
   cursor: pointer;
@@ -111,9 +149,7 @@
 }
 
 .select-clicked {
-  border: 2px solid red;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05)0px 4px 6px -2px;
+  box-shadow: 0 2px 16px 0 rgb(0 0 0 / 15%);
 }
 
 .select:hover {
@@ -126,7 +162,7 @@
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 6px solid #fff;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .caret-rotate {
@@ -142,8 +178,10 @@
   color: #354F52;
   opacity: 0;
   display: none;
-  transition: 0.2s;
+  transition: all 0.5s;
   z-index: 10;
+  position: absolute;
+  width: 100%;
 }
 
 .menu li {
@@ -162,11 +200,234 @@
   background-color: #719E93;
 }
 
-.active {
+.active-menu {
   background-color: #719E93;
 }
 
 .menu-open {
   display: block;
   opacity: 1;
+}
+
+.filter-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #52796F;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px 0 rgb(0 0 0 / 15%);
+}
+
+.toggle-btn {
+  transition: all 0.2s;
+  color: #CAD2C5;
+  font-weight: 500;
+  padding: 1rem 3.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.toggle-active {
+  background-color: #354F52;
+}
+
+/*** CARDS ***/
+
+.tournaments-upcomming,
+.tournaments-inprogress {
+  padding: 4.2rem 6.4rem;
+  /* border-bottom: 2px solid #354F52; */
+}
+
+.tournaments-main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3.2rem;
+  list-style: none;
+  margin-bottom: 4.8rem;
+
+}
+
+.tournament-card {
+  /* border: 1px solid #fff; */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #354F52;
+  box-shadow: 0 2px 16px 0 rgb(0 0 0 / 15%);
+}
+
+.card-banner {
+  position: relative;
+}
+
+.tour-dayleft {
+  position: absolute;
+  padding: 1rem 1.4rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: rgba(128, 128, 128, 0.501);
+  backdrop-filter: blur(5px);
+}
+
+.img-banner {
+  width: 100%;
+  height: 100%;
+}
+
+.card-details {
+  /* border: 1px solid #fff; */
+  padding: 1.6rem;
+  height: 100%;
+}
+
+.card-details p {
+  font-size: 1.2rem !important;
+}
+
+.card-head {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
+}
+
+.tour-schedule {
+  display: flex;
+  justify-content: space-between;
+  color: #B9C3B2;
+  font-size: 1.4rem;
+}
+
+.tour-date,
+.tour-time,
+.tour-region {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.tour-region {
+  background-color: #52796F;
+  padding: 0.2rem 0.8rem;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.region-flag {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.tour-info-fee,
+.tour-info-size,
+.tour-info-prize {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.info-text {
+  color: #fff;
+  font-weight: 600;
+}
+
+.info-head {
+  color: #B9C3B2;
+}
+
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-info i {
+  font-size: 1.6rem;
+  color: #e67e22;
+}
+
+.card-info {
+  border-top: 1px solid #52796F;
+  padding: 1.6rem;
+}
+
+.user-joined {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tour-join {
+  background-color: #52796F;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.go-join {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.btn--join {
+  padding: 1rem 1.4rem !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+}
+
+.join-users {
+  display: flex;
+
+}
+
+.user-img {
+  height: 3.2rem !important;
+  width: 3.2rem !important;
+  border-radius: 50%;
+  margin-right: -1.4rem;
+  border: 2px solid #52796f;
+}
+
+.user-img:last-child {
+  margin: 0;
+}
+
+/* ************** */
+/* swiper */
+/* ************** */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 5rem;
+}
+
+.swiper-slide {
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+:root {
+  --swiper-theme-color: #fff;
 }

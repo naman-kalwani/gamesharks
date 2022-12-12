@@ -44,8 +44,8 @@ sidebarNav.addEventListener("click", function (e) {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 
     // left-border
-    sidebarLinks.forEach((link) => link.classList.remove("active"));
-    e.target.classList.add("active");
+    sidebarLinks.forEach((link) => link.classList.remove("active-sidebar"));
+    e.target.classList.add("active-sidebar");
   }
 });
 
