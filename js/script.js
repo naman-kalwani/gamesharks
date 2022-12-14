@@ -10,7 +10,8 @@ const cardOverlay = document.querySelectorAll(".card-overlay");
 const Cards = document.querySelectorAll(".card");
 
 // modal window ===========================================
-const openModal = function () {
+const openModal = function (e) {
+  e.preventDefault();
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
@@ -25,6 +26,7 @@ btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (e) {
+  e.preventDefault();
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
@@ -39,9 +41,9 @@ const sidebarLinks = document.querySelectorAll(".sidebar-nav-link");
 sidebarNav.addEventListener("click", function (e) {
   e.preventDefault();
   if (e.target.classList.contains("sidebar-nav-link")) {
-    // scroll
-    const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    // // scroll
+    // const id = e.target.getAttribute("href");
+    // document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 
     // left-border
     sidebarLinks.forEach((link) => link.classList.remove("active-sidebar"));
@@ -89,4 +91,23 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+// scroll to
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    if (href !== "#" && href.startsWith("#")) {
+      const section = document.querySelector(href);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 });
