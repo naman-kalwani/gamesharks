@@ -4,7 +4,8 @@
 
 .hero {
     /* border: 1px solid white; */
-    margin-top: 9.6rem;
+    margin: 9.6rem auto 0;
+    /* max-width: 130rem; */
     padding: 4.2rem 9.6rem;
 }
 
@@ -45,7 +46,7 @@
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.497);
     width: 100%;
     height: 100%;
-    margin-right: 0 !important;
+    margin-right: 0;
     overflow: hidden;
 }
 
@@ -85,22 +86,18 @@
 /*********************************************/
 
 .main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     padding: 4.8rem 9.6rem;
-    gap: 5%;
     /* border: 1px solid #fff; */
-}
-
-.main-content {
-    /* border: 1px solid #fff; */
-    min-width: 75%;
 }
 
 .sticky {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     min-width: 15%;
     /* border: 1px solid #fff; */
+
     margin-top: 11rem;
     margin-bottom: 8.0rem;
     height: 40vh;
@@ -113,6 +110,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2.4rem;
 }
 
@@ -171,8 +169,10 @@
     height: 35vh;
     /* border: 2px solid #fff; */
     color: #fff;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #111;
     overflow: hidden;
     box-shadow: 0 2px 16px 0 rgb(0 0 0 / 15%);
 }

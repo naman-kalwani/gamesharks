@@ -41,9 +41,9 @@ const sidebarLinks = document.querySelectorAll(".sidebar-nav-link");
 sidebarNav.addEventListener("click", function (e) {
   e.preventDefault();
   if (e.target.classList.contains("sidebar-nav-link")) {
-    // // scroll
-    // const id = e.target.getAttribute("href");
-    // document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    // scroll
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 
     // left-border
     sidebarLinks.forEach((link) => link.classList.remove("active-sidebar"));
@@ -94,6 +94,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // scroll to
+/*
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
@@ -111,3 +112,4 @@ allLinks.forEach(function (link) {
     }
   });
 });
+*/

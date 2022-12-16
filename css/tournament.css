@@ -236,21 +236,21 @@
 
 /*** CARDS ***/
 
-.tournaments-upcomming,
+.tournaments-upcoming,
 .tournaments-inprogress,
 .tournaments-completed,
-.tour-banner {
+.tour-banner,
+.tour-games {
   padding: 9.6rem 6.4rem;
   border-bottom: 2px solid #354F52;
 }
 
 .tournaments-main-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 3.2rem;
   list-style: none;
   margin-bottom: 4.8rem;
-
 }
 
 .tournament-card {
@@ -267,7 +267,7 @@
   position: relative;
 }
 
-.tour-dayleft {
+.tour-daysleft {
   position: absolute;
   padding: 1rem 1.6rem;
   font-weight: 600;
@@ -290,7 +290,7 @@
 }
 
 .card-details p {
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
 }
 
 .card-head {
@@ -323,8 +323,8 @@
 }
 
 .region-flag {
-  height: 25px !important;
-  width: 25px !important;
+  height: 25px;
+  width: 25px;
 }
 
 .tour-info-fee,
@@ -396,8 +396,8 @@
 }
 
 .user-img {
-  height: 3.6rem !important;
-  width: 3.6rem !important;
+  height: 3.6rem;
+  width: 3.6rem;
   border-radius: 50%;
   margin-right: -1.5rem;
   border: 2px solid #52796f;
@@ -447,6 +447,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .banner-head {
@@ -461,4 +462,31 @@
   height: 100%;
   width: 100%;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.353));
+}
+
+.tour-prizes {
+  padding: 9.6rem 12.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  border-bottom: 2px solid #354F52;
+}
+
+.tour-rewards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+}
+
+.reward-png {
+  height: 9.6rem;
+  width: 9.6rem;
+}
+
+.reward {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
 }
