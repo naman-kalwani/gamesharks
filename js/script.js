@@ -1,8 +1,11 @@
 "use strict";
 
-const modal = document.querySelector(".modal");
+const modal = document.querySelectorAll(".modal");
+const signup = document.querySelector(".signup");
+const login = document.querySelector(".login");
+const formLinks = document.querySelectorAll(".toggle-form--link");
 const overlay = document.querySelector(".overlay");
-const btnCloseModal = document.querySelector(".btn--close-modal");
+const btnCloseModal = document.querySelectorAll(".btn--close-modal");
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
 const header = document.querySelector(".header");
 const sectionTrending = document.querySelector("#section-trending");
@@ -12,17 +15,18 @@ const Cards = document.querySelectorAll(".card");
 // modal window ===========================================
 const openModal = function (e) {
   e.preventDefault();
-  modal.classList.remove("hidden");
+  modal.forEach((modal) => modal.classList.remove("hidden"));
   overlay.classList.remove("hidden");
 };
 const closeModal = function () {
-  modal.classList.add("hidden");
+  modal.forEach((modal) => modal.classList.add("hidden"));
   overlay.classList.add("hidden");
+  signup.style.opacity = 0;
 };
 
 btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 
-btnCloseModal.addEventListener("click", closeModal);
+btnCloseModal.forEach((btn) => btn.addEventListener("click", closeModal));
 overlay.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (e) {
@@ -31,6 +35,17 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+formLinks.forEach((link) =>
+  link.addEventListener("click", function () {
+    login.classList.toggle("hidden");
+    if (login.classList.contains("hidden")) {
+      signup.style.opacity = 1;
+    } else {
+      signup.style.opacity = 0;
+    }
+  })
+);
 // ======================================================
 
 // side bar

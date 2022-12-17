@@ -52,24 +52,70 @@
           </form>
         </div>
         <nav class="main-nav-right">
-          <a href="https://discord.gg/47tBwADc" class="main-nav-link"
+          <a
+            href="https://discord.gg/47tBwADc"
+            class="main-nav-link"
+            target="_blank"
             >Community</a
           >
           <a href="#footer" class="main-nav-link">Contact Us</a>
-          <a href="#" class="main-nav-link nav-cta btn--show-modal">Sign Up</a>
+          <a href="#" class="main-nav-link nav-cta btn--show-modal">Sign In</a>
         </nav>
       </nav>
-      <div class="modal hidden">
+      <div class="modal hidden signup">
         <button class="btn--close-modal">&times;</button>
-        <h2 class="modal-heading">Sign up Now !</h2>
+        <div class="form-head">
+          <h2 class="modal-heading">Create Account!</h2>
+          <p class="modal-text">Create your account in few simple steps</p>
+        </div>
         <form action="" class="modal--form">
-          <label>Username</label>
-          <input type="text" />
-          <label>Email Address</label>
-          <input type="email" />
-          <label>Password</label>
-          <input type="password" />
-          <button>REGISTER</button>
+          <input type="email" placeholder="Gameshark@email.com" />
+          <input type="password" placeholder="create password" />
+          <input type="password" placeholder="confirm Password" />
+          <div class="form-button">
+            <button>Create an account</button>
+          </div>
+          <div class="form-link">
+            <span class="modal-text"
+              >Already have an account?
+              <a href="#" class="toggle-form--link">Login</a></span
+            >
+          </div>
+          <div class="line"></div>
+          <div class="form-social">
+            <a href="#"><i class="fa-brands fa-google media"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f media"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter media"></i></a>
+            <a href="#"><i class="fa-brands fa-apple media"></i></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal hidden login">
+        <button class="btn--close-modal">&times;</button>
+        <div class="form-head">
+          <h2 class="modal-heading">Welcome Back!</h2>
+          <p class="modal-text">login into your account in few simple steps</p>
+        </div>
+        <form action="" class="modal--form">
+          <input type="email" placeholder="Gameshark@email.com" />
+          <input type="password" placeholder="password" />
+          <div class="form-button">
+            <button>Login</button>
+          </div>
+          <div class="form-link">
+            <span class="modal-text"
+              >Don't have an account?
+              <a href="#" class="toggle-form--link">Signup</a></span
+            >
+          </div>
+          <div class="line"></div>
+          <div class="form-social">
+            <a href="#"><i class="fa-brands fa-google media"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f media"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter media"></i></a>
+            <a href="#"><i class="fa-brands fa-apple media"></i></a>
+          </div>
         </form>
       </div>
       <div class="overlay hidden"></div>
@@ -82,7 +128,7 @@
           <p class="hero-discription">
             GameSharks is a platform where you can download various games for
             your PC, ANDROID, MAC and IOS. GameSharks also provide you a
-            platform to join a tournament and create your own as well.
+            platform to join tournament and create your own as well.
           </p>
           <div class="hero-nav">
             <a href="#section-trending" class="btn--full"

@@ -59,17 +59,60 @@
           <a href="" class="main-nav-link nav-cta btn--show-modal">Sign Up</a>
         </nav>
       </nav>
-      <div class="modal hidden">
+      <div class="modal hidden signup">
         <button class="btn--close-modal">&times;</button>
-        <h2 class="modal-heading">Sign up Now !</h2>
+        <div class="form-head">
+          <h2 class="modal-heading">Create Account!</h2>
+          <p class="modal-text">Create your account in few simple steps</p>
+        </div>
         <form action="" class="modal--form">
-          <label>Username</label>
-          <input type="text" />
-          <label>Email Address</label>
-          <input type="email" />
-          <label>Password</label>
-          <input type="password" />
-          <button>REGISTER</button>
+          <input type="email" placeholder="Gameshark@email.com" />
+          <input type="password" placeholder="create password" />
+          <input type="password" placeholder="confirm Password" />
+          <div class="form-button">
+            <button>Create an account</button>
+          </div>
+          <div class="form-link">
+            <span class="modal-text"
+              >Already have an account?
+              <a href="#" class="toggle-form--link">Login</a></span
+            >
+          </div>
+          <div class="line"></div>
+          <div class="form-social">
+            <a href="#"><i class="fa-brands fa-google media"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f media"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter media"></i></a>
+            <a href="#"><i class="fa-brands fa-apple media"></i></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal hidden login">
+        <button class="btn--close-modal">&times;</button>
+        <div class="form-head">
+          <h2 class="modal-heading">Welcome Back!</h2>
+          <p class="modal-text">login into your account in few simple steps</p>
+        </div>
+        <form action="" class="modal--form">
+          <input type="email" placeholder="Gameshark@email.com" />
+          <input type="password" placeholder="password" />
+          <div class="form-button">
+            <button>Login</button>
+          </div>
+          <div class="form-link">
+            <span class="modal-text"
+              >Don't have an account?
+              <a href="#" class="toggle-form--link">Signup</a></span
+            >
+          </div>
+          <div class="line"></div>
+          <div class="form-social">
+            <a href="#"><i class="fa-brands fa-google media"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f media"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter media"></i></a>
+            <a href="#"><i class="fa-brands fa-apple media"></i></a>
+          </div>
         </form>
       </div>
       <div class="overlay hidden"></div>
@@ -3192,15 +3235,6 @@
     ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
 
     <!-- =========================================== -->
   </body>
