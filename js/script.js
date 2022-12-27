@@ -37,7 +37,8 @@ document.addEventListener("keydown", function (e) {
 });
 
 formLinks.forEach((link) =>
-  link.addEventListener("click", function () {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
     login.classList.toggle("hidden");
     if (login.classList.contains("hidden")) {
       signup.style.opacity = 1;
